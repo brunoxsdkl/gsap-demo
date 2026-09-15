@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSAP Demo - Tulipa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1 class="logo">GSAP<span>Demo</span></h1>
+    <p class="tagline">Animacoes com GSAP Core + Timeline + ScrollTrigger</p>
+    <section class="stage">
+      <button id="playAll" class="btn">Reproduzir timeline</button>
+      <div class="dots" id="dots">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div>
+      </div>
+    </section>
+    <section class="scroll-section" data-stagger>
+      <h2>ScrollTrigger - revelacao em cascata</h2>
+      <div class="cards" id="cards">
+        <div class="card">Core</div>
+        <div class="card">Timeline</div>
+        <div class="card">ScrollTrigger</div>
+        <div class="card">gsap.utils</div>
+      </div>
+    </section>
+    <section class="pin-section" data-pin>
+      <h2>Pin + scrub - section fixada</h2>
+      <p id="counter">0%</p>
+      <div class="bar" id="bar"></div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
